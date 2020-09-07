@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/* it sets how the total width and height of an element is calculated. */
+
+
+body {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+}
