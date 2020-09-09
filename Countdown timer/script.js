@@ -21,14 +21,19 @@ function countdown() {
     // console.log(diff.getHours());
     // console.log(diff.getMonth());
 
+    // (newYearDate-currentDate) : get the time in milliseconds
     const seconds = (newYearDate-currentDate) / 1000;
 
-    const days = Math.floor(seconds/ 3600 / 24);
+    const days = Math.floor(seconds / 3600 / 24);
     const hours = Math.floor(seconds / 3600) % 24;
     const minutes = (Math.floor(seconds / 60 ) % 60);
     const sec = Math.floor(seconds) % 60;
 
-    console.log("seconds : "+ sec,"mins : "+ minutes,"hours : " + hours , "days : " + days);
+
+
+
+    console.log(Math.floor(seconds) % 60);
+    console.log(Math.floor(seconds / 60));
     
     daysEi.innerHTML = days;
     hoursEi.innerHTML = formatTime(hours);
